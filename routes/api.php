@@ -36,7 +36,5 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::delete('/admin/logout', [AdminAuthController::class, 'logout'])->middleware('auth:sanctum');
 
     // Endpoint untuk report
-    Route::get('/admin/reports', [AdminReportController::class, 'index']);
-    Route::get('/admin/reports/{id}', [AdminReportController::class, 'show']);
-    Route::post('/admin/reports/{id}', [AdminReportController::class, 'update']);
+    Route::apiResource('/admin/reports', AdminReportController::class)->only(['index', 'show', 'update']);
 });
