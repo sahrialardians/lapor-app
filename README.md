@@ -52,3 +52,4 @@ Maka local server akan berjalan di http::127.0.0.1:8000
 
 ## Dokumentasi
 Dokumentasi dapat dilihat diliat di postman collection
+https://documenter.getpostman.com/view/7362955/2sBXqRjx9U
